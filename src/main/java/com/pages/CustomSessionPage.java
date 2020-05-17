@@ -88,6 +88,7 @@ public class CustomSessionPage extends BasePage<CustomSessionPage> {
 
     @Step("Click image questions toggle button to select only image questions")
     public CustomSessionPage clickImageQuestionsToggleButton() {
+        waitForVisibilityOf(imageQuestionsToggleButton);
         click(imageQuestionsToggleButton);
         return this;
     }
@@ -112,6 +113,7 @@ public class CustomSessionPage extends BasePage<CustomSessionPage> {
 
     @Step("Select exam radio button for simulate exam")
     public CustomSessionPage selectExam() {
+        waitForVisibilityOf(selectExamSimulation);
         click(selectExamSimulation);
         return this;
     }
